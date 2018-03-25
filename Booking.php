@@ -14,10 +14,11 @@
 	<div class="container col-sm-4">
 		<div>
 			<h2>Book Your Flights Here</h2>
-			<button class="btn btn-primary"><a href="register.php">Registration</a></button>
+			<a href="register.php">Registration</a>
+			<a href="login.php">Login</a>
 		</div>
 		<div class="col-sm-12">
-			<form action='process.php' method ="GET" class="border border-dark">
+			<form action='process.php' method ="GET" class="border border-light">
 				<div class="form-group">
 					<select name="typeOfTrip"> 
 					<option value = "Round Trip" name="Round Trip" class="form-control">Round Trip</option>

@@ -10,7 +10,9 @@
 		User ID : <input type="text" name="userID"><br/>
 		First Name: <input type="text" name="fName"/><br/>
 		Last Name: <input type="text" name="lName"/><br/>
-		Password : <input type="Password" name="passwd"><br/>
+		Address : <input type="text" name="address"><br/>
+		Cell Number: <input type="text" name="cellNumber"><br/>
+		Password : <input type="password" name="passwd"><br/>
 		<input type="submit" name="Submit">
 	</form>
 	</fieldset>
@@ -24,6 +26,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	$password = $_POST['passwd'];
 	$FirstName = $_POST['fName'];
 	$LastName = $_POST['lName'];
+	$address = $_POST['address'];
+	$cellNumber = $_POST['cellNumber'];
 
 
 	//Database info
@@ -38,8 +42,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 		$conn = new PDO("mysql:host=$serverName;dbname=$dbName",$dbUserName,$dbPassword);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql = "INSERT INTO users (userID,password,firstName,lastName) VALUES 
-		('$userID','$password','$FirstName','$LastName')";
+		$sql = "INSERT INTO users (userID,password,firstName,lastName,address,cellNumber) VALUES 
+		('$userID','$password','$FirstName','$LastName','$address','$cellNumber')";
 
 		$conn->exec($sql);
 

@@ -1,0 +1,43 @@
+body{
+	background-image: url('../images.jpg');
+	background-size: cover;
+	position: relative;
+	font-family: "Times New Roman", Times, serif;
+}
+a:link{
+	text-decoration: none;
+}
+.container{
+	margin: auto;
+	background-color: #244081;
+}
+
+body,div
+{
+	color: #F0ECEE;
+	font-size: 18px;
+}
+.booking{
+	background-image: url('../water.jpg');
+	background-size: cover;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+.support{
+	background-image: url('../rocks.jpg');
+	background-size: cover;
+	position: relative;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.support,th tr{
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.booking,div,p
+{
+	color: #F0ECEE;
+	font-size: 18px;
+}

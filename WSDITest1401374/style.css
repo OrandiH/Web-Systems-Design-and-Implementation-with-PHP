@@ -1,0 +1,36 @@
+/*Custom stylesheet*/
+.main{
+	background-image: url("images.jpeg");
+	background-size: cover;
+	width:300px;
+}
+
+body,button{
+	margin: auto;
+}
+
+.table,th,td{
+	border: 1px solid blue;
+	font-size: 18px;
+}
+
+
+.booking{
+	background-color: #244081;
+	margin:auto;
+	width:300px;
+}
+.form{
+	
+	color: #F0ECEE;
+	font-size: 18px;
+
+}
+a:link{
+	text-decoration: none;
+}
+
+.confirmation{
+	background-image: url("confirm.jpeg");
+	background-size: cover;
+}
